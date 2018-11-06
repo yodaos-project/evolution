@@ -1,4 +1,4 @@
-# Feature name
+# Suspend In LifeCycle
 
 * Proposal: [YODA-0001](0001-life-cycle-suspend.md)
 * Authors: [Chengzhong Wu](https://github.com/legendecas)
