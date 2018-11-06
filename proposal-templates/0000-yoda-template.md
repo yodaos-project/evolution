@@ -4,6 +4,16 @@
 * Authors: [Author 1](https://github.com/yodadev), [Author 2](https://github.com/yodadev)
 * Review Manager: TBD
 * Status: **Awaiting implementation**
+<!--
+** Possible statuses **
+- Drafting
+- Active Review
+- Accepted
+- Implemented
+- Deferred
+- Rejected
+- Withdrawn
+-->
 
 *During the review process, add the following fields as needed:*
 
