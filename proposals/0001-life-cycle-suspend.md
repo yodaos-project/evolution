@@ -30,8 +30,3 @@
 ## Effect on API compatibility
 
 需要应用将原有的 activity#destroy 监听中区分是希望在技能退出，亦或是进程退出的代码，然后将需要提前在技能退出时即销毁的资源迁移至 activity#suspend 的监听中。
-
-## Alternatives considered
-
-Describe alternative approaches to addressing the same problem, and
-why you chose this approach instead.
