@@ -1,7 +1,26 @@
-# opus-player
+<style>
+body, .markdown-preview {
+  background-color: #f6f6e8;
+}
+h2 {
+  color: #6ac5a2 !important;
+}
+p {
+  font-size: 24px;
+}
+code {
+  border: 2px dashed #222;
+  border-radius: 10px;
+}
+pre {
+  border: 5px solid #aaa !important;
+}
+</style>
+
+# ow-player
 
 * Proposal: [YODA-0002](https://gitlab.rokid-inc.com/GravityTeam/yoda-evolution/blob/master/proposals/0002-opus-player.md)
-* Authors: [sudo](https://github.com/LanFly), [lei.zhu](mailto:lei.zhu@rokid.com)
+* Authors: [lei.zhu](mailto:lei.zhu@rokid.com), [sudo](https://github.com/LanFly)
 * Review Manager: TBD
 * Status: **Drafting**
 
@@ -59,7 +78,7 @@ activity.appSound('path/to/volume_plus.wav', { ignore: true })
 
 ## Effect on API compatibility
 
-The application only needs to make a little change, add the options parameter when calling the api.
+For application developers, the application only needs to make a little change, add the options parameter when calling the api.
 
 For lighting effects developers, the audio will not stop automatically when the lighting effect is over.
 If you need to stop the audio automatically when the lighting effect is stopped, you need to manually stop it in the stop hook function.
@@ -82,6 +101,27 @@ callback()
 
 If lightd automatically turns off the audio, then the effect of this lighting effect is wrong.
 
-## Alternatives considered
+I want to stop player when lighting effect is stopped, what should I do ?
 
-nothing now
+```js
+// The length of the audio is 2 seconds
+var player = light.sound('path/to/open_mic.wav')
+
+// This operation is almost completed immediately.
+light.fill(0, 0, 0)
+light.render()
+callback()
+return {
+  stop: function () {
+    player.stop()
+  }
+}
+```
+
+## How much performance has been improved?
+
+
+## What changes have we made to the opus file format?
+
+
+## How to use the opus format conversion tool?
