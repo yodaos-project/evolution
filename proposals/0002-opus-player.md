@@ -1,28 +1,9 @@
-<style>
-body, .markdown-preview {
-  background-color: #f6f6e8;
-}
-h2 {
-  color: #6ac5a2 !important;
-}
-p {
-  font-size: 24px;
-}
-code {
-  border: 2px dashed #222;
-  border-radius: 10px;
-}
-pre {
-  border: 5px solid #aaa !important;
-}
-</style>
-
 # ow-player
 
 * Proposal: [YODA-0002](https://gitlab.rokid-inc.com/GravityTeam/yoda-evolution/blob/master/proposals/0002-opus-player.md)
 * Authors: [lei.zhu](mailto:lei.zhu@rokid.com), [sudo](https://github.com/LanFly)
-* Review Manager: TBD
-* Status: **Drafting**
+* Review Manager: [sudo](https://github.com/LanFly)
+* Status: **Draft**
 
 ## Introduction
 
