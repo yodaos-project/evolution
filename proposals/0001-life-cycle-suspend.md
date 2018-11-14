@@ -3,7 +3,7 @@
 * Proposal: [YODA-0001](0001-life-cycle-suspend.md)
 * Authors: [Chengzhong Wu](https://github.com/legendecas)
 * Review Manager: TBD
-* Status: **Drafting**
+* Status: **Awaiting Review**
 
 ## Introduction
 
